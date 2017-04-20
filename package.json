@@ -1,0 +1,56 @@
+{
+  "message": "Go Serverless v1.0! Your function executed successfully!",
+  "input": {
+    "resource": "/twilio/zork",
+    "path": "/twilio/zork",
+    "httpMethod": "POST",
+    "headers": {
+      "Accept": "*/*",
+      "Cache-Control": "max-age=259200",
+      "CloudFront-Forwarded-Proto": "https",
+      "CloudFront-Is-Desktop-Viewer": "true",
+      "CloudFront-Is-Mobile-Viewer": "false",
+      "CloudFront-Is-SmartTV-Viewer": "false",
+      "CloudFront-Is-Tablet-Viewer": "false",
+      "CloudFront-Viewer-Country": "US",
+      "Content-Type": "application/x-www-form-urlencoded",
+      "Host": "cajt2arr39.execute-api.us-east-1.amazonaws.com",
+      "User-Agent": "TwilioProxy/1.1",
+      "Via": "1.1 aacade9ab32f7d5ee52553d620cb3362.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Id": "J2iFX9mvJVimvg9csdk4ZZR2SOY_5InlNFrRovs9taJEOKpr0457_A==",
+      "X-Amzn-Trace-Id": "Root=1-58f8f5a4-67b23c6c4cfeb30c1e3022b7",
+      "X-Forwarded-For": "54.172.241.8, 54.182.230.5",
+      "X-Forwarded-Port": "443",
+      "X-Forwarded-Proto": "https",
+      "X-Twilio-Signature": "E00NvWIYmF3L01io6RZnRgVuOQ8="
+    },
+    "queryStringParameters": null,
+    "pathParameters": null,
+    "stageVariables": null,
+    "requestContext": {
+      "accountId": "546375621904",
+      "resourceId": "ei4d7r",
+      "stage": "dev",
+      "requestId": "497f1d24-25f2-11e7-91a9-f37c5c744985",
+      "identity": {
+        "cognitoIdentityPoolId": null,
+        "accountId": null,
+        "cognitoIdentityId": null,
+        "caller": null,
+        "apiKey": null,
+        "sourceIp": "54.172.241.8",
+        "accessKey": null,
+        "cognitoAuthenticationType": null,
+        "cognitoAuthenticationProvider": null,
+        "userArn": null,
+        "userAgent": "TwilioProxy/1.1",
+        "user": null
+      },
+      "resourcePath": "/twilio/zork",
+      "httpMethod": "POST",
+      "apiId": "cajt2arr39"
+    },
+    "body": "ToCountry=US&ToState=MI&SmsMessageSid=SM0f4273271ce8590c920cb08da404f85d&NumMedia=0&ToCity=SOUTHFIELD&FromZip=32128&SmsSid=SM0f4273271ce8590c920cb08da404f85d&FromState=FL&SmsStatus=received&FromCity=DAYTONA+BEACH&Body=I+love+memes&FromCountry=US&To=%2B12485042307&MessagingServiceSid=MG9f6e8854ea445b35fc0fd5b0431699bd&ToZip=48034&NumSegments=1&MessageSid=SM0f4273271ce8590c920cb08da404f85d&AccountSid=ACc4bbd3e069ae681b607b2281aa8eb335&From=%2B13865626559&ApiVersion=2010-04-01",
+    "isBase64Encoded": false
+  }
+}
