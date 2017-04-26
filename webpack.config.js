@@ -4,7 +4,7 @@ const path = require('path');
 process.env.SLS_DEBUG="*"
 
 module.exports = {
-        entry: './handler.js',
+        entry: './lib/twilioHandler.js',
         target: 'node',
         externals: ['aws-sdk'],
         output: {
