@@ -1,6 +1,5 @@
 'use strict';
 const querystring = require('querystring');
-const inquirer = require('inquirer');
 const Promise = require('bluebird');
 const locale = require('./locale-enUS');
 const S3FS = require('s3fs');
