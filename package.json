@@ -23,6 +23,7 @@
   "main": "handler.js",
   "dependencies": {
     "bluebird": "^3.5.0",
+    "hoek": "^4.1.1",
     "s3fs": "^2.5.0"
   },
   "devDependencies": {
@@ -37,9 +38,9 @@
     "nsp": "^2.6.3"
   },
   "scripts": {
-    "lint": "eslint . && jscs . && jsinspect . && buddy --detect-objects index.js ./lib",
+    "lint": "eslint . && jscs . && jsinspect . && buddy --detect-objects ./lib",
     "security": "nsp check",
-    "cover": "istanbul cover _mocha -- --check-leaks --recursive --timeout=25000 test && istanbul check-coverage --statements 80.95 --branches 76.56 --functions 74.3 --lines 80.95",
+    "cover": "istanbul cover _mocha -- --check-leaks --recursive --timeout=25000 test",
     "test": "mocha --check-leaks --recursive --timeout=25000 test",
     "test-ci": "npm run lint && npm run security && npm run cover"
   }
