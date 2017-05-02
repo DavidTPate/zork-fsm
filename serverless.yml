@@ -70,7 +70,7 @@ provider:
 
 functions:
   zork:
-    handler: lib/twilioHandler.handle
+    handler: handler.handle
     environment:
       STATE_BUCKET_NAME: "zork-state-bucket"
     events:

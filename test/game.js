@@ -80,6 +80,17 @@ describe('Full Test Suite', () => {
             west: ''
         });
     });
+    it('should be able to remove the boards from the Mine in the Clearing', () => {
+        return expect(Game.handleResponseForCurrentState({
+            previousState: 'west-of-house',
+            currentState: 'forest'
+        }, 'go west')).to.eventually.equal(Locale.clearing.intro).then(() => {
+            return expect(Game.handleResponseForCurrentState({
+                previousState: 'forest',
+                currentState: 'clearing'
+            }, 'break boards')).to.eventually.equal(Locale.clearing.introBoardRemoves);
+        });
+    });
 });
 
 function lookAllDirections(stateName, userState) {
