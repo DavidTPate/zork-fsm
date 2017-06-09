@@ -70,7 +70,7 @@ provider:
 
 functions:
   zork:
-    handler: handler.handle
+    handler: handler.handleTwilio
     environment:
       STATE_BUCKET_NAME: "zork-state-bucket"
     events:
@@ -78,6 +78,10 @@ functions:
           path: twilio/zork
           method: post
           cors: true
+  zork-lex:
+    handler: handler.handleLex
+    environment:
+      STATE_BUCKET_NAME: "zork-state-bucket"
 
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events

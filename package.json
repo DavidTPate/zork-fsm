@@ -45,7 +45,7 @@
     "jsinspect": "^0.12.4",
     "mocha": "^3.3.0",
     "nsp": "^2.6.3",
-    "serverless": "^1.12.0",
+    "serverless": "^1.15.1",
     "serverless-webpack": "^1.0.0-rc.4",
     "webpack": "^2.4.1"
   },

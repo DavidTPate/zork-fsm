@@ -1,10 +1,11 @@
 const Webpack = require('webpack');
 const path = require('path');
 
-process.env.SLS_DEBUG="*"
+process.env.SLS_DEBUG = "*";
 
-module.exports = {
-        entry: './lib/twilioHandler.js',
+module.exports = [
+    {
+        entry: './lib/handler.js',
         target: 'node',
         externals: ['aws-sdk'],
         output: {
@@ -38,4 +39,5 @@ module.exports = {
                 debug: false
             })
         ]
-    };
+    }
+];
